@@ -24,8 +24,8 @@
       <th scope="col">TITULO</th>
       <th scope="col">CATEGORIA</th>
       <th scope="col">ANO DE PÚBLICAÇÃO</th>
-      <th scope="col">VALOR</th>
       <th scope="col">AUTOR</th>
+      <th scope="col">VALOR</th>
     </tr>
     
   </thead>
@@ -36,34 +36,11 @@
       <td><?php echo $result['titulo']; ?></td>
       <td><?php echo $result['categoria']; ?></td>
       <td><?php echo $result['ano_publicacao']; ?></td>
-      <td><?php echo $result['valor']; ?></td>
-      <td><?php echo $result['autor']; ?></td>
+      <td><?php echo $result['nm_autor']; ?></td>
+      <td><?php echo $result['vl_livro']; ?></td>
 
     </tr>
 <?php } ?>
-
-<?php while ($result = mysqli_fetch_array($query)) { ?>
-    <tr>
-      <th scope="row">1</th>
-      <td><?php echo $result['titulo']; ?></td>
-      <td><?php echo $result['categoria']; ?></td>
-      <td><?php echo $result['ano_publicacao']; ?></td>
-      <td><?php echo $result['valor']; ?></td>
-      <td><?php echo $result['autor']; ?></td>
-    </tr>
-<?php } ?>
-
-<?php while ($result = mysqli_fetch_array($query)) { ?>
-    <tr>
-        <th scope="row">1</th>
-      <td><?php echo $result['titulo']; ?></td>
-      <td><?php echo $result['categoria']; ?></td>
-      <td><?php echo $result['ano_publicacao']; ?></td>
-      <td><?php echo $result['valor']; ?></td>
-      <td><?php echo $result['autor']; ?></td>
-    </tr>
-<?php } ?>
-
 
 </div>
 
